@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1.titlee.padding.header Histoires :
+  p.padding Toutes les Histoires ici :
+    div.dtbase1
+      each user, i in users.reverse()
+        div.dtbase
+          p Auteur : #{user.username} 
+          p Nom de l'Histoire : #{user.name} 
+          p Genre : #{user.type} 
+          a(href='/users/'+user._id)
+            button(name='page') Lire
+      

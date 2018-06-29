@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1.titlee.padding.header Nouvelle Histoire
+  p.padding Ecrivez votre livre :
+  form(method='post', action='/users/register')
+    .form-group
+    div.form
+      label.padding Email (votre email sera invisible au yeux des lecteurs)
+      input(name='email', type='email', placeholder='Email', required=true)
+      label.padding Nom sous lequel votre ouvrage sera publié :
+      input(name='username', type='text', placeholder='Username', required=true)
+      label.padding Nom de l'ouvrage : 
+      input(name='name', type='text', placeholder='Nom', required=true)
+      label.padding Image illustrant votre ouvrage (pas encore disponible) :
+      input(name='profileimage', type='file',placeholder='image')
+      label.padding Votre Histoire : 
+      div.texte
+        textarea(name="ouvrage" rows="10" cols="80" placeholder="50 caractères minimums" spellcheck=true, maxlength=10000,
+        minlength=50 required=true).textarea
+      label.padding Genre de l'Histoire (Fantastique, horreur, rommantique, etc...) : 
+      input(name='type', type='text', placeholder='Type', required=true)   
+    h4 ATTENTION, verrifiez bien que votre histoire ne comporte ni de fautes ni d'erreurs de script car vous ne pourrez pas modifiez votre histoire aprés publication. Merci.
+    div.button
+     button(type='submit', name='submit') Post

@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1.titlee.padding.header Histoires :
+  p.padding Toutes les Histoires ici :
+    div.dtbase1
+      textarea(name="ouvrage" rows="10" cols="80" placeholder="50 caractères minimums" spellcheck=true, maxlength=10000,
+      minlength=50 required=true).textarea #{user.ouvrage}
+    div.modif
+      a(href="/") 
+        button(name="modif") Post.
+      

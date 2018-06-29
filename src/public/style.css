@@ -1,0 +1,113 @@
+*{
+  font-family: 'Titillium Web', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+}
+.titlee{
+  color: orange;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  background-color: #ff9f43;
+  color: white;
+}
+.padding{
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+ul{
+  display: flex;
+  justify-content: space-around;
+  background-color: #ff6b6b;
+  margin-top: -16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  text-decoration: none;
+}
+li{
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+.dtbase1{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  height: 100%;
+}
+.dtbase{
+  margin-top: 20px;
+  border: 3px solid #be2edd;
+  background-color: #ffbe76;
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+  width: calc(50% - 21px);
+}
+.ouvrage{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.textarea{
+  width:100%;
+}
+.post{
+  display: flex;
+  justify-content: center;
+  color: white,
+}
+.header{
+  margin-top: 20px;
+}
+.headerp{
+  font-size: 20px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 10px;
+}
+input{
+  border-radius: 5px;
+}
+button{
+  width: 100px;
+  background-color: #130f40;
+  color: white;
+  border-radius: 15px;
+  border: 3px solid #ff7979;
+}
+button:hover{
+  background-color: #30336b;
+  border: 3px solid #ffbe76;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+h4{
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.history {
+  display: flex;
+  padding: 20px;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 25px;
+}

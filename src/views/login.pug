@@ -1,0 +1,13 @@
+extends layout
+
+block content
+
+  h1.page-header.titlee.header Login
+  p.padding Zone Administrative : login
+  form(method='post', action='user/login')
+    .form-group
+    label.padding name
+    input.form-control(name='name', type='text', placeholder='entrer votre nom')
+    label.padding password
+    input.form-control(name='password', type='password', placeholder='entrer votre password')
+  input(type='submit', name='submit',value='connection')

@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1.titlee.padding.header Histoires :
+  p.padding Toutes les Histoires ici :
+  div.history
+    textarea(name="ouvrage" rows="30" cols="100" placeholder="50 caractères minimums" spellcheck=true, maxlength=10000,
+    minlength=50 required=true readonly).textarea #{user.ouvrage}
+  div.modif
+    a(href="/") 
+      button(name="modif") Modifier l'histoire.
+      
